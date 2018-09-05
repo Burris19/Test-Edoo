@@ -13,13 +13,13 @@ def principal(tumple1, tumple2, tumple3, tumple4):
     threeResult = calculateDistances(tumple3, tumple2 + tumple1 + tumple4)
     fourResult = calculateDistances(tumple4, tumple2 + tumple3 + tumple1)  
 
-    result = 0 
+    isSquare = 0 
     for x in fourResult:
         if x in secondResult and x in threeResult and x in fourResult:
-            result = 1
+            isSquare = 1
             break
 
-    if result == 1:
+    if isSquare == 1:
         print("Es un cuadrado")
     else:
         print("No es un cuadrado")
