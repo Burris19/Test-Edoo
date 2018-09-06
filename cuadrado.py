@@ -14,7 +14,7 @@ def principal(tumple1, tumple2, tumple3, tumple4):
     fourResult = calculateDistances(tumple4, tumple2 + tumple3 + tumple1)  
 
     isSquare = 0 
-    for x in fourResult:
+    for x in firstResult:
         if x in secondResult and x in threeResult and x in fourResult:
             isSquare = 1
             break
